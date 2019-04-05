@@ -27,19 +27,19 @@
         </div>
 
         <div class="inner-wrapper">
-          <label for="tag">Select Tag: </label>
-          <select class="selector" id="tag-selector" name="tag">
-            <option value="" disabled selected></option>
-            <option value="1.Backlog">1.Backlog</option>
-            <option value="2.To do">2.To do</option>
-            <option value="3.Doing">3.Doing</option>
-            <option value="4.Done">4.Done</option>
-          </select>
+          <label for="date">Due Date: </label>
+          <input type="date" name="date" value="" id="due-date">
         </div>
 
         <div class="inner-wrapper">
-          <label for="date">Due Date: </label>
-          <input type="date" name="date" value="" id="due-date">
+          <label for="tag">Select Tag: </label>
+          <select class="selector" id="tag-selector" name="tag">
+            <option value="" disabled selected></option>
+            <option value="Backlog">Backlog</option>
+            <option value="To do">To do</option>
+            <option value="Doing">Doing</option>
+            <option value="Done">Done</option>
+          </select>
         </div>
       </div>
       <div class="button">
@@ -60,10 +60,13 @@
           </tr>
         </thead>
         <tbody>
-          
+          <!-- <tr></tr> -->
         </tbody>
       </table>
     </div>
+    <form id="delete" >
+      <input type="submit" value="Clear"/>
+    </form>
   </section>
 </body>
 </html>
