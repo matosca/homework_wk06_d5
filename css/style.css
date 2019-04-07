@@ -7,9 +7,11 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
 }
-
+/* Section form and form styled to top page */
 .brand {
   margin: 2em 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
 }
 /* Styling form */
 #form {
@@ -42,6 +44,7 @@ body{
 }
 
 .inner-wrapper input {
+  outline: none;
   border: none;
   box-shadow: none;
   background: rgba(0, 0, 0, 0);
@@ -62,9 +65,13 @@ body{
   font-size: 1.2em;
   color: #fff;
   border: 0.5px solid #1C6E7D;
+  padding: 0 10px;
   max-width: 40vw;
   min-width: 15vw;
   height: 4.5vh;
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none;
+  appearance: none; */
 }
 
 ::placeholder{
@@ -82,4 +89,9 @@ body{
 
 .button input[type="submit"]:hover {
   background: rgba(20, 20, 20, .8);
+}
+
+/* Section Content and List of tasks style */
+#content {
+  margin-top: 8em;
 }
