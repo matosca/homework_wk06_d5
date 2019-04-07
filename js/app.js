@@ -15,10 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskDueDate = event.target[2].value;
     const taskTagSelect = event.target[3].value;
 
-    //Main Container for resulted list created
-    // const mainContent = document.createElement('div');
-    // mainContent.classList.add('task-list');
-
     // list items captures in const to append to resultTaskList
     const listItemName = document.createElement('h5');
     listItemName.textContent = taskName;
@@ -29,19 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
     listItemDescription.classList.add('description');
 
     const listItemDate = document.createElement('p');
-    listItemDate.textContent = `Due Date: ${taskDueDate} | ${taskTagSelect}`;
+    // listItemDate.textContent = `Due Date: ${taskDueDate} | ${taskTagSelect}`;
     listItemDate.classList.add('date');
 
-    // const listItemTag = document.createElement('span');
-    // listItemTag.textContent = taskTagSelect;
-    // listItemTag.classList.add('tag');
+    const listItemTag = document.createElement('span');
+    listItemTag.textContent = taskTagSelect;
+    listItemTag.classList.add('tag');
 
     resultTaskList.appendChild(listItemName);
     resultTaskList.appendChild(listItemDescription);
     resultTaskList.appendChild(listItemDate);
-
-    // listItems.textContent = `${event.target[0].value} ${event.target[1].value} ${event.target[2].value} ${event.target[3].value}`;
-    // resultTaskList.appendChild(listItems);
 
     //Reseting the form
     document.getElementById('task-form').reset();

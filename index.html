@@ -36,10 +36,10 @@
           <label for="tag"></label>
           <select class="selector" id="tag-selector" name="tag">
             <option value="Choose Tag">Choose tag</option>
-            <option value="Backlog">Backlog</option>
-            <option value="To do">To do</option>
-            <option value="Doing">Doing</option>
-            <option value="Done">Done</option>
+            <option id="grey" value="Backlog">Backlog</option>
+            <option id="green" value="To do">To do</option>
+            <option id="orange" value="Doing">Doing</option>
+            <option id="purple" value="Done">Done</option>
           </select>
         </div>
       </div>
@@ -49,13 +49,8 @@
     </form>
   </section>
   <section id="content">
-    <div class="tasks">
-
-    </div>
+    <div class="tasks"></div>
   </section>
-  <!-- <section id="list-levels">
-    <legend><span>Backlog</span> <span>To Do</span> <span>Doing</span> <span>Done</span> </legend>
-  </section> -->
   <form id="delete" >
     <input type="submit" value="Clear"/>
   </form>
